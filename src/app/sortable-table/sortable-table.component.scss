@@ -1,0 +1,72 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  overflow: hidden;
+
+  .card-header {
+    background-color: #f8f9fa;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    cursor: pointer;
+  }
+
+  th:hover {
+    background-color: #f1f1f1;
+  }
+
+  // Additional styles for responsiveness
+  @media screen and (max-width: 768px) {
+    th,
+    td {
+      padding: 6px 10px;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #f9f9f9;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    th,
+    td {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+
+    th {
+      font-size: 14px;
+    }
+
+    // Adjustments for better readability on small screens
+    td {
+      word-break: break-word;
+    }
+  }
+}
